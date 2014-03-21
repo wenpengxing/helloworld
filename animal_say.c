@@ -57,13 +57,13 @@ void sort_animal(ANIMAL *a, int n, int (*cmp)(ANIMAL, ANIMAL))
 	int i, j;
 	for (i = 0; i < n; i++)
 		for (j = 0; j < n-i-1; j++)
-			if (cmp(a[j], a[j+1]))
+			if (cmp(a[j], a[j+1]) > 0)
 				swap(&a[j], &a[j+1]);
 }
 int main(void)
 {
 	ANIMAL a[10];
-	int i = 0;
+
 	init_animal("cow", cow_say, 2, &a[0]);
 	init_animal("dog", dog_say, 1, &a[1]);
 	init_animal("man", man_say, 3, &a[2]);
