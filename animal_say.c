@@ -5,6 +5,7 @@ struct animal {
 	void (*say_what)(void);
 	int level;
 };
+
 typedef struct animal ANIMAL;
 void cow_say(void)
 {
