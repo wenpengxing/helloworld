@@ -1,0 +1,21 @@
+libstack.a:is_empty.o push.o pop.o
+	ar rs libstack.a is_empty.o push.o pop.o
+is_empty.o:is_empty.c
+	gcc -c is_empty.c
+push.o:push.c
+	gcc -c push.c
+pop.o:pop.c
+	gcc -c pop.c
+
+install:
+	sudo cp libstack.a /usr/lib
+
+.PHONY:clean
+clean:
+	-rm -f *.o
+	-rm -f *.a
+	@echo "rm OK"
+test:
+	ls -l
+	pwd
+	ls -a
