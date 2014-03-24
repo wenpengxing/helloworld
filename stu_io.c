@@ -34,7 +34,9 @@ void show_stu(struct STU *a, int n)
 {
 	int i;
 	for (i = 0; i < n; ++i)
-		printf("%d\t%s\t%c\n", a[i].id, a[i].name, a[i].sex);
+		//printf("%d\t%s\t%c\n", a[i].id, a[i].name, a[i].sex);
+		fprintf(stdout, "%d\t%s\t%c\n", a[i].id, a[i].name, a[i].sex);
+
 
 }
 void swap(struct STU *m, struct STU *n)
