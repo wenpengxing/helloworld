@@ -1,10 +1,3 @@
-/*
-typedef struct node *link;
-struct node {
-	unsigned char item;
-	link next;
-};
-*/
 #include <stdio.h>
 #include <stdlib.h>
 #include "single_list.h"
