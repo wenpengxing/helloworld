@@ -24,6 +24,7 @@ int main(void)
 //	delete(p);
 //	free_node(p);
 	traverse_head(&head, &tail, print_item);
+	printf("*********\n");
 	sort_double(&head, &tail);
 	traverse_head(&head, &tail, print_item);
 	destroy(&head, &tail);

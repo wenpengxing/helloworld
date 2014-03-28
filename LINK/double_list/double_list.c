@@ -37,7 +37,6 @@ void insert_head(link *head, link p)
 }
 void delete(link p)
 {
-
 	p->pre->next = p->next;
 	p->next->pre = p->pre;
 }
