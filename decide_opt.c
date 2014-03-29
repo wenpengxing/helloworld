@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-typedef int (OPT*)(int , int );
+typedef int (*OPT)(int , int );
+
 int add(int a, int b)
 {
     return a+b;
@@ -21,7 +23,7 @@ int dive(int a, int b)
 }
 OPT decide_opt(int ch)
 {
-    switch (ch) {
+    switch ((char )ch) {
         case '+': return add;
         case '-': return sub;
         case '*': return mul;

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int word_cnt(FILE *fp)
 {
@@ -6,6 +7,7 @@ int word_cnt(FILE *fp)
     int n = 0;
     char *save = buf;
     while (fgets(buf, sizeof(buf), fp)) {
+		save = buf;
         while (strtok_r(save, " ,.;\n", &save))
             n++;
     }
