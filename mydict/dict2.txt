@@ -1,0 +1,26 @@
+﻿#辩难
+Trans:debate
+#辩证
+Trans:1.discriminate@dialectical
+#辩证法
+Trans:dialectics
+#辩证过程
+Trans:dialectical process
+#辩证逻辑
+Trans:dialectical logic
+#辩证唯物论
+Trans:dialectical materialism
+#辩证唯物主义
+Trans:dialectical materialism
+#辫梢
+Trans:tip of a plait
+#辫子
+Trans:plait@braid@queue@pigtail@plait the hair@handle@
+#遍布
+Trans:be found everywhere@spread all over
+#遍地
+Trans:everywhere@all around@
+#遍地皆是
+Trans:wall to wall
+#遍地开花
+Trans:blossom everywhere@be a mass of flowers@be blooming everwhere@flourish everywhere@
