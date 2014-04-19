@@ -8,9 +8,9 @@ struct node {
 };
 
 void init_single(link *head);
-link make_node(unsigned char item);
+link make_node(unsigned int item);
 void free_node(link p);
-link search(link *head, unsigned char key);
+link search(link *head, unsigned int key);
 void insert(link *head, link p);
 void delete(link *head, link p);
 void traverse(link *head, void (*visit)(link));

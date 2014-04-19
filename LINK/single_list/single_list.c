@@ -5,9 +5,9 @@ void init_single(link *head)
 {
     *head = NULL;
 }
-link make_node(unsigned char item)
+link make_node(unsigned int item)
 {
-    link p = malloc(sizeof *p);
+    link p = (link)malloc(sizeof *p);
 	p->item = item;
 	p->next = NULL;
 	return p;
@@ -16,7 +16,7 @@ void free_node(link p)
 {
     free(p);
 }
-link search(link *head, unsigned char key)
+link search(link *head, unsigned int key)
 {
     link p;
 	for (p = *head; p; p = p->next)
@@ -48,6 +48,7 @@ void traverse(link *head, void (*visit)(link))
 	for (p = *head; p; p = p->next)
 		visit(p);
 }
+
 void destroy(link *head)
 {
     link q, p = *head;
