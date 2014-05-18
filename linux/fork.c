@@ -13,10 +13,10 @@ int main(void)
 		}
 	}
 	else if (pid > 0) {
-		while (1) {
+	//	while (1) {
 			printf("%d I am parent %d, my child %d, my parent %d\n", getpid(),i++, pid, getppid());
 			sleep(3);
-		}
+	//	}
 	}
 	else {
 		perror("fork");
